@@ -24,7 +24,17 @@ export class AppComponent {
       "firstName":"Elon",
       "lastName":"Musk",
       "age":"41",
-      "country":"USA"
+      "country":"US"
+    },{
+      "firstName":"Elon",
+      "lastName":"Musk",
+      "age":"73",
+      "country":"India"
+    },{
+      "firstName":"Elon",
+      "lastName":"Musk",
+      "age":"41",
+      "country":"China"
     }
   ];
   constructor(){
@@ -36,12 +46,10 @@ export class AppComponent {
     if(this.searchElement === ''){
       this.users = this.database;
     }else{
-      this.users = [];
-      this.database.forEach((data)=>{
-        if(data.firstName === this.searchElement)
-          this.users.push(data);
-          this.arraySize = false;
-      });
+      // this.users = [];
+      this.users = this.users.filter(data=> data.firstName == this.searchElement);
+      this.users = this.users.filter(data => data.age > 70);
+      this.users = this.users.filter(data => (data.country == 'India' || data.country == 'US' || data.country == 'Singapore'|| data.country == 'Canada'));
       if(this.users.length ===0)
         this.arraySize = true;
     }
