@@ -11,34 +11,34 @@ export class AppComponent {
   users:Array<Model>;
   database:Array<Model>=[
     {
-      "firstName":"Gowthaman",
-      "lastName":"M",
+      "firstName":"User1",
+      "lastName":"user",
       "age":"21",
       "country":"India"
     },{
-      "firstName":"Gokul",
-      "lastName":"Shakthi",
-      "age":"21",
+      "firstName":"User2",
+      "lastName":"user",
+      "age":"71",
       "country":"India"
     },{
-      "firstName":"Elon",
-      "lastName":"Musk",
+      "firstName":"User3",
+      "lastName":"user",
       "age":"41",
       "country":"US"
     },{
-      "firstName":"Elon",
-      "lastName":"Musk",
+      "firstName":"User4",
+      "lastName":"user",
       "age":"73",
       "country":"India"
     },{
-      "firstName":"Elon",
-      "lastName":"Musk",
+      "firstName":"User5",
+      "lastName":"user",
       "age":"41",
       "country":"China"
     }
     ,{
-      "firstName":"Nandhini",
-      "lastName":"Naren",
+      "firstName":"User6",
+      "lastName":"user",
       "age":"27",
       "country":"Canada"
     }
